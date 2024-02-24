@@ -1,0 +1,121 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+/* Header Dropdown */
+.header__dropdown {
+  position: relative;
+  display: flex;
+}
+
+.header__dropdownButton {
+  cursor: pointer;
+  background-color: white;
+  text-align: center;
+}
+
+/* Category List */
+.header__categories {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  background-color: #fff; /* Background color of the dropdown */
+  border: 1px solid #ccc; /* Border */
+  border-top: none; /* Remove top border to connect with button */
+  border-radius: 0 0 4px 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  display: none; /* Hide by default */
+  z-index:1;
+}
+
+.header__dropdown:hover .header__categories {
+  display: block; /* Show when dropdown button is hovered */
+}
+
+.header__categoriesList {
+  list-style-type: none; /* Remove list style */
+  padding: 0;
+  margin: 0;
+}
+
+.header__category {
+  padding: 10px; /* Adjust padding */
+}
+
+.header__categoryLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__categoryLink:hover {
+  color: #007bff;
+}
+
+
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+  margin-left:20px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
